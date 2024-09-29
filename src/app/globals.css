@@ -1,27 +1,53 @@
+@import "@radix-ui/colors/gray.css";
+@import "@radix-ui/colors/gray-dark.css";
+@import "@radix-ui/colors/gray-alpha.css";
+@import "@radix-ui/colors/gray-dark-alpha.css";
+@import "@radix-ui/colors/blue.css";
+@import "@radix-ui/colors/blue-alpha.css";
+@import "@radix-ui/colors/blue-dark-alpha.css";
+@import "@radix-ui/colors/blue-dark.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --bg: var(--gray-1);
+    --boxBg: var(--gray-4);
   }
-}
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
+  .light {
+    --contrast-color: #fff;
+    .prose {
+      --tw-prose-headings: var(--gray-12);
+      --tw-prose-body: var(--gray-12);
+      --tw-prose-bold: var(--gray-12);
+      --tw-prose-links: var(--blue-11);
+      --tw-prose-code: var(--gray-12);
+      --tw-prose-quotes: var(--gray-12);
+    }
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .dark {
+    --contrast-color: #0a0a0a;
+    .prose {
+      --tw-prose-headings: var(--gray-12);
+      --tw-prose-body: var(--gray-11);
+      --tw-prose-bold: var(--gray-11);
+      --tw-prose-links: var(--blue-11);
+      --tw-prose-code: var(--gray-11);
+      --tw-prose-quotes: var(--gray-11);
+    }
+  }
+
+  .main-header {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-color: var(--bg);
   }
 }
