@@ -143,7 +143,7 @@ export default function Gallery() {
         <Photo
           src={meLily}
           meta="2021-07-12"
-          alt="Brian and Lily"
+          alt="Sebastian and Mirna"
           width={324}
           height={239}
           rotate={-6}

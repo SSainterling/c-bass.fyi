@@ -17,9 +17,9 @@ import NYC from "src/public/assets/nycSkyline.jpg";
 import Greeting from "./components/Greeting";
 
 export const metadata: Metadata = {
-  title: "About | Brian Ruiz",
+  title: "About | Sebastain Sainterling",
   description:
-    "New York City based Software Engineer and a Content Creator, sharing insights on well-designed products and technology advancements.",
+    " Atlanta based Engineer and a Content Creator, sharing insights on well-designed products and technology advancements.",
 };
 
 export default async function About() {
@@ -78,20 +78,20 @@ export default async function About() {
         <Section heading="About" headingAlignment="left">
           <div className="flex flex-col gap-6">
             <p>
-              <Greeting /> I&apos;m Brian Ruiz! Originally from Honduras,
-              I&apos;m now based in the vibrant place that is New York City.
+              <Greeting /> I&apos;m Sebastian Sainterling! Originally from Florida,
+              I&apos;m now based in the vibrant place that is Atlanta, Georgia.
             </p>
             <p>
               My curiosity for computers began at age 10, which naturally led me
               to pursue a career in tech. I&apos;ve been working as a software
-              engineer, specializing in full-stack development and design, for{" "}
-              {new Date().getFullYear() - 2019} years now!
+              engineer, experiencing as a Software Test Engineer, for{" "}
+              {new Date().getFullYear() - 2012} years now!
             </p>
             <p>
               Alongside my coding journey, I run a{" "}
               <Link
                 className="underline"
-                href="https://www.youtube.com/@brianruizy"
+                href="https://www.youtube.com/@Cbass_"
               >
                 YouTube
               </Link>{" "}
@@ -99,8 +99,7 @@ export default async function About() {
               vlogs, and occasionally practice my filmmaking skills.
             </p>
             <p>
-              When I&apos;m not at my desk, you can find me at the gym, biking
-              around the city on my e-bike, or enjoying some coffee at a local
+              When I&apos;m not at my desk, you can find me at the gym or enjoying some coffee at a local
               shop!
             </p>
           </div>
@@ -137,9 +136,14 @@ export default async function About() {
         <Section heading="Work" headingAlignment="left">
           <div className="flex w-full flex-col gap-8">
             <p>
-              I specialize in Python, data analytics, React, web development,
-              UI/UX, and product design. But I am always learning new things.
-              Here are some of the places I have worked.
+              I have extensive experience in software testing and development, with a strong command of programming
+              languages such as Java, JavaScript, HTML, CSS, and Swift.
+              I specialize in automation using Selenium and have hands-on expertise with performance testing tools
+              like Apache JMeter, JMeter DSL, LoadRunner Enterprise, and VuGen.
+              I have successfully integrated CI/CD pipelines using Azure DevOps and utilized Dynatrace RUM for performance monitoring.
+              My skill set includes version control with Git, as well as working with tools like IntelliJ and Insomnia.
+              Proficient in SAFe Agile and Agile SDLC methodologies,
+              I excel in UI and API testing, along with conducting performance tests for high-traffic applications.
             </p>
             <Workplaces items={workplaces} />
           </div>
