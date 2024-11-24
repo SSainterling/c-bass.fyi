@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "[my-framework] build --output public",
     "start": "next start",
     "lint": "next lint"
+
   },
   "dependencies": {
     "@clerk/nextjs": "^5.6.3",
