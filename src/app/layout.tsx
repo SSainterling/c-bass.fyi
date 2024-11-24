@@ -10,14 +10,13 @@ import Navigation from "@/src/app/components/Navigation";
 import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://b-r.io"),
-  title: "Brian Ruiz",
+  metadataBase: new URL("https://c-bass.io"),
+  title: "Sebastian Sainterling",
   description:
-      "New York City based Software Engineer and a Content Creator, sharing insights on well-designed products and technology advancements.",
+      "Atlanta based Engineer and a Content Creator, sharing insights on well-designed products and technology advancements.",
   openGraph: {
-    title: "Brian Ruiz",
-    url: "https://b-r.io/",
-    images: [{ url: "https://b-r.io/api/og?title=B-R.io", alt: "b-r.io" }],
+    title: "Sebastian Sainterling",
+    url: "https://c-bass.io/",
   },
 };
 

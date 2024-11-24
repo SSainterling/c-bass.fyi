@@ -1,8 +1,8 @@
-import Link from "../../../IdeaProjects/projectAlpha/main/app/components/Link";
+import Link from "src/app/components/Link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "404 | Brian Ruiz",
+  title: "404 | Sebastian Sainterling",
   description: "Uh oh! This page does not exist",
 };
 
@@ -14,7 +14,7 @@ const Custom404 = (): JSX.Element => (
       misspelled. Please try again…
     </p>
     <div className="h-2" />
-    <Link href="/main/public" underline>
+    <Link href="src/public" underline>
       Return home
     </Link>
   </div>

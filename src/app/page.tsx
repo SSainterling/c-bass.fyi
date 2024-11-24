@@ -8,13 +8,13 @@ export default function Home() {
                 <div className="flex flex-col gap-8">
                     <div className="space-y-4">
                         <h1 className="animate-in text-3xl font-semibold tracking-tight text-primary">
-                            hey, Brian here!
+                            Hey, Sebastian here!
                         </h1>
                         <p
                             className="max-w-lg animate-in text-secondary"
                             style={{"--index": 1} as React.CSSProperties}
                         >
-                            I am a software engineer who builds for the web with a
+                            I am a software test engineer who builds for the web with a
                             design-oriented approach. In addition to coding, I make{" "}
                             <Link href="https://youtube.com/@brianruizy">YouTube</Link> videos,
                             where I focus on tech, and productivity.
