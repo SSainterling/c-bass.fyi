@@ -4,18 +4,19 @@ import { ReactNode } from "react";
 import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 import clsx from "clsx";
+import localFont from 'next/font/local'
 
-import nyc from "@assets/nycSkyline.jpg";
-import meMirna from "@assets/IMG_0107 Large.jpeg";
-import meUSF from "@assets/sainterling-usf-football.jpg";
-import gatlinburg from "@assets/IMG_1002.jpg";
+import NYC from "src/public/assets/nycSkyline.jpg";
+import meLily from "src/public/assets/meMirna.jpg";
+import colorado from "src/public/assets/smokeyMountains.png";
+import cowboy from "src/public/assets/sainterling-usf-football.jpg";
+import Halo from "@/src/app/components/Halo";
 
-import Halo from "@/app/components/Halo";
 
-/*const ticketingFont = localFont({
-  src: "@/app/fonts/Ticketing.woff",
+const ticketingFont = localFont({
+  src: "../../../public/ticketing.woff2",
   display: "swap",
-});*/
+});
 
 type PhotoProps = {
   src: StaticImageData | string;
@@ -140,17 +141,17 @@ export default function Gallery() {
     <>
       <section className="flex gap-4 h-[268px] relative">
         <Photo
-          src={meMirna}
+          src={meLily}
           meta="2021-07-12"
           alt="Brian and Lily"
           width={324}
           height={239}
           rotate={-6}
-          left={-76}
+          left={-56}
           index={1}
         />
         <Photo
-          src={gatlinburg}
+          src={cowboy}
           meta="2017-07-04"
           alt="my e-bike"
           width={230}
@@ -160,24 +161,24 @@ export default function Gallery() {
           index={2}
           flipDirection="left"
         />
-         <Photo
-          src={nyc}
+        <Photo
+          src={NYC}
           meta="2021-05-20"
-          alt="Texas"
+          alt="World Trade Center"
           width={280}
           height={235}
           rotate={-5.4}
-          left={300}
+          left={280}
           index={3}
         />
         <Photo
-          src={meUSF}
+          src={colorado}
           meta="2022-09-10"
           alt={"Snowboarding in Colorado"}
           width={220}
           height={260}
           rotate={7.6}
-          left={530}
+          left={500}
           index={4}
           flipDirection="left"
         />

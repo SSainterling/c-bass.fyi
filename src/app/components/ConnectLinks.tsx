@@ -16,7 +16,7 @@ interface ConnectLink {
 const ConnectLinks: ConnectLink[] = [
   {
     label: "Partnerships",
-    href: "mailto:partners@b-r.io",
+    href: "mailto:S.Sainterling@Outlook.com",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"

@@ -1,9 +1,8 @@
 "use client";
-
 import Image, { StaticImageData } from "next/image";
 import clsx from "clsx";
 
-import Link from "@/app/components/Link";
+import Link from "@/src/app/components/Link";
 
 type Workplace = {
   title: string;
