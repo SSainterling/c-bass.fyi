@@ -6,7 +6,7 @@
 @import "@radix-ui/colors/gray-dark-alpha.css";
 @import "@radix-ui/colors/blue-alpha.css";
 @import "@radix-ui/colors/blue-dark.css";
-@import "src/public/assets/prism/one-dark.css";
+@import "../public/prism/one-dark.css";
 
 @tailwind base;
 @tailwind components;
