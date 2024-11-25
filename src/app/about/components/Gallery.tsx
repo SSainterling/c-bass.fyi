@@ -7,9 +7,9 @@ import clsx from "clsx";
 import localFont from 'next/font/local'
 
 import NYC from "src/public/assets/nycSkyline.jpg";
-import meLily from "src/public/assets/meMirna.jpg";
-import colorado from "src/public/assets/smokeyMountains.png";
-import cowboy from "src/public/assets/sainterling-usf-football.jpg";
+import meMirna from "src/public/assets/meMirna.jpg";
+import tennessee from "src/public/assets/smokeyMountains.png";
+import usfFootball from "src/public/assets/sainterling-usf-football.jpg";
 import Halo from "@/src/app/components/Halo";
 
 
@@ -139,9 +139,9 @@ function Photo({
 export default function Gallery() {
   return (
     <>
-      <section className="flex gap-4 h-[268px] relative">
+      <section className="flex gap-80 h-[268px] relative">
         <Photo
-          src={meLily}
+          src={meMirna}
           meta="2021-07-12"
           alt="Sebastian and Mirna"
           width={324}
@@ -151,7 +151,7 @@ export default function Gallery() {
           index={1}
         />
         <Photo
-          src={cowboy}
+          src={usfFootball}
           meta="2017-07-04"
           alt="my e-bike"
           width={230}
@@ -172,7 +172,7 @@ export default function Gallery() {
           index={3}
         />
         <Photo
-          src={colorado}
+          src={tennessee}
           meta="2022-09-10"
           alt={"Snowboarding in Colorado"}
           width={220}
