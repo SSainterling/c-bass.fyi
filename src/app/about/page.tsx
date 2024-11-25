@@ -85,7 +85,7 @@ export default async function About() {
               My curiosity for computers began at age 10, which naturally led me
               to pursue a career in tech. I&apos;ve been working as a software
               engineer, experiencing as a Software Test Engineer, for{" "}
-              {new Date().getFullYear() - 2012} years now!
+              {new Date().getFullYear() - 2020} years now!
             </p>
             <p>
               Alongside my coding journey, I run a{" "}
