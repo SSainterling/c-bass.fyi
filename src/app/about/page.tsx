@@ -7,13 +7,9 @@ import ConnectLinks from "@/src/app/components/ConnectLinks";
 import Workplaces from "@/src/app/about/components/Workplaces";
 import Gallery from "@/src/app/about/components/Gallery";
 
-import gmLogo from "src/public/assets/gmLogo.png";
-// import perishipLogo from "public/work/periship-logo.jpeg";
-// import camsLogo from "public/work/cams-logo.png";
-// import uhdLogo from "public/work/uhd.png";
-//
-import meMirna from "src/public/assets/meMirna.jpg";
-import NYC from "src/public/assets/nycSkyline.jpg";
+import gmLogo from "@/src/public/assets/gmLogo.png";
+import meMirna from "@/src/public/assets/meMirna.jpg";
+import NYC from "@/src/public/assets/nycSkyline.jpg";
 import Greeting from "./components/Greeting";
 
 export const metadata: Metadata = {
@@ -43,9 +39,7 @@ export default async function About() {
           style={{ "--index": 1 } as React.CSSProperties}
         >
           <Image
-              //TODO: Fix this
             src={NYC}
-              // src={new URL("https://res.cloudinary.com/brianruizy/image/upload/v1635730004/gallery/nyc.jpg")}
             alt={"me and lily"}
             width={324}
             height={139}
@@ -83,9 +77,11 @@ export default async function About() {
             </p>
             <p>
               My curiosity for computers began at age 10, which naturally led me
-              to pursue a career in tech. I&apos;ve been working as a software
-              engineer, experiencing as a Software Test Engineer, for{" "}
-              {new Date().getFullYear() - 2012} years now!
+              to pursue a career in tech. I&apos;ve been developing my skills as an
+              engineer for{" "}
+              {new Date().getFullYear() - 2018} years now,
+               experiencing as a Software Test Engineer, for{" "}
+              {new Date().getFullYear() - 2022} years now!
             </p>
             <p>
               Alongside my coding journey, I run a{" "}
@@ -136,14 +132,11 @@ export default async function About() {
         <Section heading="Work" headingAlignment="left">
           <div className="flex w-full flex-col gap-8">
             <p>
-              I have extensive experience in software testing and development, with a strong command of programming
-              languages such as Java, JavaScript, HTML, CSS, and Swift.
-              I specialize in automation using Selenium and have hands-on expertise with performance testing tools
-              like Apache JMeter, JMeter DSL, LoadRunner Enterprise, and VuGen.
-              I have successfully integrated CI/CD pipelines using Azure DevOps and utilized Dynatrace RUM for performance monitoring.
-              My skill set includes version control with Git, as well as working with tools like IntelliJ and Insomnia.
-              Proficient in SAFe Agile and Agile SDLC methodologies,
-              I excel in UI and API testing, along with conducting performance tests for high-traffic applications.
+              I have extensive experience in software testing and development,
+              specializing in automation with Selenium and performance testing
+              using tools like Apache JMeter, LoadRunner Enterprise, and VuGen.
+              Proficient in Java, JavaScript, HTML, and CSS. I have integrated
+              CI/CD pipelines with Github Actions and used Dynatrace RUM for monitoring.
             </p>
             <Workplaces items={workplaces} />
           </div>
@@ -157,7 +150,7 @@ const workplaces = [
   {
     title: "Software Test Engineer",
     company: "General Motors",
-    date: "2022 -",
+    date: "2022 - Present",
     imageSrc: gmLogo,
     link: "https://gm.com",
   },
