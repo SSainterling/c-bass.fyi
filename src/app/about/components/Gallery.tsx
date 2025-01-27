@@ -6,10 +6,10 @@ import { motion } from "framer-motion";
 import clsx from "clsx";
 import localFont from 'next/font/local'
 
-import NYC from "src/public/assets/nycSkyline.jpg";
-import meMirna from "src/public/assets/meMirna.jpg";
-import tennessee from "src/public/assets/smokeyMountains.png";
-import usfFootball from "src/public/assets/sainterling-usf-football.jpg";
+import NYC from "@/src/public/assets/nycSkyline.jpg";
+import meMirna from "@/src/public/assets/meMirna.jpg";
+import tennessee from "@/src/public/assets/smokeyMountains.png";
+import usfFootball from "@/src/public/assets/sainterling-usf-football.jpg";
 import Halo from "@/src/app/components/Halo";
 
 
@@ -142,43 +142,43 @@ export default function Gallery() {
       <section className="flex gap-80 h-[268px] relative">
         <Photo
           src={meMirna}
-          meta="2021-07-12"
+          meta="2023-11-15"
           alt="Sebastian and Mirna"
           width={324}
           height={239}
           rotate={-6}
-          left={-56}
+          left={-70}
           index={1}
         />
         <Photo
           src={usfFootball}
-          meta="2017-07-04"
-          alt="my e-bike"
+          meta="2021-09-29"
+          alt="USF Football"
           width={230}
           height={250}
           rotate={6.3}
-          left={160}
+          left={180}
           index={2}
           flipDirection="left"
         />
         <Photo
           src={NYC}
-          meta="2021-05-20"
-          alt="World Trade Center"
+          meta="2024-10-20"
+          alt="Empire State Building"
           width={280}
           height={235}
           rotate={-5.4}
-          left={280}
+          left={350}
           index={3}
         />
         <Photo
           src={tennessee}
-          meta="2022-09-10"
-          alt={"Snowboarding in Colorado"}
+          meta="2024-07-15"
+          alt={"Gatlinburg, Tennessee"}
           width={220}
           height={260}
           rotate={7.6}
-          left={500}
+          left={600}
           index={4}
           flipDirection="left"
         />

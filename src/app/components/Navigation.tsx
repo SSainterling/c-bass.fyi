@@ -1,9 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
 import { motion } from "framer-motion";
-
 import ThemeSwitcher from "@/src/app/components/ThemeSwitcher";
 
 const links = [
@@ -16,12 +14,12 @@ const links = [
     title: "About",
   },
   {
-    path: "/blog",
-    title: "Blog",
-  },
-  {
     path: "/gear",
     title: "Gear",
+  },
+  {
+    path: "/resume",
+    title: "Resume",
   },
 ] as const;
 
@@ -30,31 +28,31 @@ export default function Navigation() {
 
   return (
       <header className="md:mt-6">
-        <nav className="mx-auto flex max-w-[700px] items-center justify-between gap-3 px-4 py-3 md:px-6">
+        <nav className="mx-auto flex max-w-[700px] items-right justify-between gap-3 px-4 py-3 md:px-6" data-qaid="name">
+          {/* Creative "SS" Icon */}
           <Link href="/" className="hidden shrink-0 text-primary md:block">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="36"
                 height="36"
-                viewBox="0 0 375 375"
-                version="1.2"
+                viewBox="0 0 36 36"
+                fill="none"
             >
-              <defs>
-                <clipPath id="clip1">
-                  <path d="M 103.636719 64.171875 L 271.476562 64.171875 L 271.476562 310 L 103.636719 310 Z M 103.636719 64.171875 " />
-                </clipPath>
-              </defs>
-              <g id="surface1">
-                <g clipPath="url(#clip1)" clipRule="nonzero">
-                  <path
-                      fill="currentColor"
-                      d="M 211.375 151.808594 C 203.050781 149.433594 194.765625 155.722656 194.765625 164.390625 L 194.765625 297.785156 C 194.765625 305.234375 201.695312 310.808594 208.941406 309.09375 C 244.675781 300.671875 271.355469 268.492188 271.355469 230.195312 C 271.355469 193.117188 246.363281 161.785156 211.375 151.808594 Z M 180.15625 144.734375 L 180.15625 297.785156 C 180.15625 305.234375 173.230469 310.808594 165.980469 309.09375 C 130.246094 300.675781 103.566406 268.492188 103.566406 230.195312 L 103.566406 74.296875 C 103.566406 68.449219 108.902344 64.046875 114.640625 65.164062 C 151.925781 72.410156 180.15625 105.335938 180.15625 144.734375 Z M 180.15625 144.734375 "
-                  />
-                </g>
-              </g>
+              {/* Abstract "SS" Design */}
+              <path
+                  fill="currentColor"
+                  d="M10 10C10 6, 14 4, 18 6C22 8, 22 12, 18 14C14 16, 10 14, 10 10ZM10 18C10 14, 14 12, 18 14C22 16, 22 20, 18 22C14 24, 10 22, 10 18Z"
+                  transform="translate(0, 0)"
+              />
+              <path
+                  fill="currentColor"
+                  d="M22 10C22 6, 26 4, 30 6C34 8, 34 12, 30 14C26 16, 22 14, 22 10ZM22 18C22 14, 26 12, 30 14C34 16, 34 20, 30 22C26 24, 22 22, 22 18Z"
+                  transform="translate(0, 0)"
+              />
             </svg>
           </Link>
 
+          {/* Navigation Links */}
           <div className="flex gap-1">
             {links.map((link) => (
                 <Link
@@ -71,7 +69,6 @@ export default function Navigation() {
                       <motion.span
                           layoutId="bubble"
                           className="absolute inset-0 -z-10 rounded-lg bg-tertiary"
-                          // style={{ borderRadius: 9999 }}
                           transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                       />
                   )}
@@ -80,6 +77,7 @@ export default function Navigation() {
             ))}
           </div>
 
+          {/* Theme Switcher */}
           <div className="flex h-8 w-8 items-center justify-center">
             <ThemeSwitcher />
           </div>
