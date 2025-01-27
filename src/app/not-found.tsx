@@ -14,9 +14,9 @@ const Custom404 = (): JSX.Element => (
       misspelled. Please try again…
     </p>
     <div className="h-2" />
-    <Link href="src/public" underline>
-      Return home
-    </Link>
+      <Link href="/" underline>
+          Return home
+      </Link>
   </div>
 );
 
