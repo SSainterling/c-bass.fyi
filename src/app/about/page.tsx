@@ -39,9 +39,7 @@ export default async function About() {
           style={{ "--index": 1 } as React.CSSProperties}
         >
           <Image
-              //TODO: Fix this
             src={NYC}
-              // src={new URL("https://res.cloudinary.com/brianruizy/image/upload/v1635730004/gallery/nyc.jpg")}
             alt={"me and lily"}
             width={324}
             height={139}
