@@ -77,15 +77,11 @@ export default async function About() {
             </p>
             <p>
               My curiosity for computers began at age 10, which naturally led me
-test/buildTest
               to pursue a career in tech. I&apos;ve been developing my skills as an
               engineer for{" "}
               {new Date().getFullYear() - 2018} years now,
                experiencing as a Software Test Engineer, for{" "}
               {new Date().getFullYear() - 2022} years now!
-              to pursue a career in tech. I&apos;ve been working as a software
-              engineer, experiencing as a Software Test Engineer, for{" "}
-              {new Date().getFullYear() - 2020} years now!
             </p>
             <p>
               Alongside my coding journey, I run a{" "}
