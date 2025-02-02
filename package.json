@@ -40,7 +40,8 @@
     "swr": "^2.2.5",
     "tlds": "^1.255.0",
     "typography": "^0.16.24",
-    "var": "^0.4.0"
+    "var": "^0.4.0",
+    "vercel": "^40.1.0"
   },
   "devDependencies": {
     "@types/linkify-it": "^5.0.0",

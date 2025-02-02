@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Gear | Sebastian Sainterling",
     description: "My toolbox. This is gear I actually own and recommend.",
     type: "website",
-    url: "https://c-bass.io/gear",
+    url: "https://c-bass.fyi/gear",
   },
 };
 

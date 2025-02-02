@@ -12,13 +12,13 @@ import Navigation from "@/src/app/components/Navigation";
 import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://c-bass.io"),
+  metadataBase: new URL("https://c-bass.fyi"),
   title: "Sebastian Sainterling",
   description:
       "Atlanta based Engineer and a Content Creator, sharing insights on well-designed products and technology advancements.",
   openGraph: {
     title: "Sebastian Sainterling",
-    url: "https://c-bass.io/",
+    url: "https://c-bass.fyi/",
   },
 };
 
@@ -36,10 +36,10 @@ export default function RootLayout({
           <Navigation />
           <div className="mx-auto max-w-[700px] px-6 pb-24 pt-16 md:px-6 md:pb-44 md:pt-20">
             {children}
+            <SpeedInsights/>
           </div>
         </ThemeProvider>
-        <Analytics />
-        <SpeedInsights/>
+        <Analytics/>
         </body>
         </html>
       </ClerkProvider>
