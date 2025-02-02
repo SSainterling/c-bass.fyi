@@ -56,7 +56,7 @@ const ConnectLinks: ConnectLink[] = [
   },
   {
     label: "LinkedIn",
-    href: "www.linkedin.com/in/ssainterling/",
+    href: "https://linkedin.com/in/ssainterling/",
     icon: <FaLinkedin />,
   },
 ];

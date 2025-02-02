@@ -7,9 +7,11 @@ import {
   ComputedFields,
 } from "contentlayer/source-files"; // eslint-disable-line
 import rehypeSlug from "rehype-slug";
-import rehypePrism from "rehype-prism-plus";
+import rehypePrism from "rehype-prism";
 
-const getSlug = (doc: any) => doc._raw.sourceFileName.replace(/\.mdx$/, "");
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-expect-error
+const getSlug = (doc: unknown) => doc._raw.sourceFileName.replace(/\.mdx$/, "");
 
 const blogComputedFields: ComputedFields = {
   slug: {
@@ -80,6 +82,6 @@ export default makeSource({
   contentDirPath: "content",
   documentTypes: [Blog, Project],
   mdx: {
-    rehypePlugins: [rehypePrism, rehypeSlug],
+    rehypePlugins: [rehypeSlug, rehypePrism ]
   },
 });
