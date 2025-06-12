@@ -20,11 +20,11 @@ const links = [
   {
     path: "/resume",
     title: "Resume",
-  },
-  {
-    path: "/wordle",
-    title: "Wordle",
   }
+  // {
+  //   path: "/wordle",
+  //   title: "Wordle",
+  // }
 ] as const;
 
 export default function Navigation() {
